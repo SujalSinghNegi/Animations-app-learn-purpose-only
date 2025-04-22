@@ -22,47 +22,207 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/text3"
-            android:layout_width="219dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="108dp"
-            android:gravity="center"
-            android:text="The Splash Screen  at the beginning of the app is also the example of online animation from lottie ."
-            android:textSize="20sp"
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/button"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.083"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/text1">
+
+            <View
+
+                android:id="@+id/targetView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/holo_blue_light" />
+
+            <androidx.core.widget.NestedScrollView
+
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutButtons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Dummy target view for animation demonstration -->
+
+                    <!-- IN Animations -->
+                    <Button
+                        android:id="@+id/btnInDown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="InDown Animation" />
+
+                    <Button
+                        android:id="@+id/btnInUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="InUp Animation" />
+
+                    <Button
+                        android:id="@+id/btnInLeft"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="InLeft Animation" />
+
+                    <Button
+                        android:id="@+id/btnInRight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="InRight Animation" />
+
+                    <!-- OUT Animations -->
+                    <Button
+                        android:id="@+id/btnIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="btnIn" />
+
+                    <Button
+                        android:id="@+id/btnAttention"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="btnAttention" />
+
+                    <Button
+                        android:id="@+id/btnAttentionWobble"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="btnAttentionWobble " />
+
+                    <Button
+                        android:id="@+id/btnAttentionShake"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="btnAttentionShake" />
+
+                    <!-- Bounce Animation -->
+                    <Button
+                        android:id="@+id/btnAttentionTada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="btnAttentionTada" />
+
+                    <!-- Fade Animations -->
+                    <Button
+                        android:id="@+id/btnFadeIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="FadeIn Animation" />
+
+                    <Button
+                        android:id="@+id/btnFadeOut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="FadeOut Animation" />
+
+                    <!-- Zoom Animations -->
+                    <Button
+                        android:id="@+id/btnZoomIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ZoomIn Animation" />
+
+                    <Button
+                        android:id="@+id/btnZoomOut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ZoomOut Animation" />
+
+                    <!-- Flip Animations -->
+                    <Button
+                        android:id="@+id/btnFlipInHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="FlipInHorizontal Animation" />
+
+                    <Button
+                        android:id="@+id/btnFlipOutHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="FlipOutHorizontal Animation" />
+
+                    <Button
+                        android:id="@+id/btnFlipInVertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="FlipInVertical Animation" />
+
+                    <Button
+                        android:id="@+id/btnFlipOutVertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="FlipOutVertical Animation" />
+
+                    <!-- Rotate Animations -->
+                    <Button
+                        android:id="@+id/btnRotateIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RotateIn Animation" />
+
+                    <Button
+                        android:id="@+id/btnRotateOut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RotateOut Animation" />
+
+                    <!-- Slide Animations -->
+                    <Button
+                        android:id="@+id/btnSlideDown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SlideDown Animation" />
+
+                    <Button
+                        android:id="@+id/btnSlideUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SlideUp Animation" />
+
+                    <Button
+                        android:id="@+id/btnSlideLeft"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SlideLeft Animation" />
+
+                    <Button
+                        android:id="@+id/btnSlideRight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SlideRight Animation" />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:backgroundTint="#B58BF6"
             android:text="Next Fragment"
             android:textSize="20sp"
             app:cornerRadius="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.506"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text1"
-            app:layout_constraintVertical_bias="0.931" />
-
-        <Button
-            android:id="@+id/show_splash"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#B58BF6"
-            android:text="Show \n Splash"
-            android:textSize="20sp"
-            app:cornerRadius="10dp"
-            app:layout_constraintBottom_toBottomOf="@+id/text3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.647"
-            app:layout_constraintStart_toEndOf="@+id/text3"
-            app:layout_constraintTop_toTopOf="@+id/text3" />
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/airbnb_screen"

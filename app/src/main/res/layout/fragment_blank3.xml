@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".BlankFragment">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -13,26 +14,111 @@
             android:id="@+id/text1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="This is Fragment 3"
             android:gravity="center"
+            android:text="This is Fragment 3"
             android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="108dp"
+            android:gravity="center"
+            android:text="The Splash Screen  at the beginning of the app is also the example of animation from lottie ."
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.083"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="217dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:text="Some another lottie animations."
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.082"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text3" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:backgroundTint="#B58BF6"
             android:text="Next Fragment"
             android:textSize="20sp"
             app:cornerRadius="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/show_splash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#B58BF6"
+            android:text="Show \n Splash"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/text3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.647"
+            app:layout_constraintStart_toEndOf="@+id/text3"
+            app:layout_constraintTop_toTopOf="@+id/text3" />
+
+        <Button
+            android:id="@+id/show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#B58BF6"
+            android:text="Show"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/text4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text4"
+            app:layout_constraintTop_toTopOf="@+id/text4" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/airbnb_screen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone"
+            app:lottie_rawRes="@raw/splash2"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text1" />
+            app:layout_constraintTop_toTopOf="parent"
+
+
+            />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie"
+            android:layout_width="230dp"
+            android:layout_height="265dp"
+
+            android:layout_marginBottom="52dp"
+
+
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
