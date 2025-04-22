@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_local"
+        android:icon="@drawable/tab_local_anim"
+        android:title="Local anim" />
+
+    <item
+        android:id="@+id/tab_online"
+        android:icon="@drawable/tab_online_anim"
+        android:title="Online anim" />
+    <item
+        android:id="@+id/tab_advance"
+        android:icon="@drawable/animate"
+        android:title="Adv anim" />
+
+</menu>

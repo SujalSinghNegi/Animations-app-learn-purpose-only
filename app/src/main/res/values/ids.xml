@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="text1" type="id" />
+    <item name="frame" type="id" />
+    <item name="frame2" type="id" />
+    <item name="fragment1" type="id" />
+
+</resources>
