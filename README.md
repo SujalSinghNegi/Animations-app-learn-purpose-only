@@ -26,12 +26,22 @@ c) Inside MainActivity.kt
 ```
 
 ## 2. Online Animation
-a) Inside the Dependency
+a.1) Inside the Dependency
 
        implementation ("com.github.gayanvoice:android-animations-kotlin:1.0.1")
 
-b) 
-       
+a.2) In settings.gradle.kts ,  below the mavenCentral()
+
+        maven {
+            url = uri("https://jitpack.io")
+        }
+
+b) create a textview and the btn in xml
+
+c) inside the MainActivity.kt file
+    
+    // to import all animation 
+    import render.animations.*
 
         val targetView = binding.targetView
         binding.btnInDown.setOnClickListener {
@@ -39,5 +49,19 @@ b)
             render.setAnimation(Bounce().InDown(targetView))
             render.start()
         }
+
+#### Note -> Bounce() is the class name, and InDown is the animation name associated with it
+Class Name and animation corespondiing to it are: 
+
+
+| Class Name  | Animation Types                                                                 |
+|-------------|----------------------------------------------------------------------------------|
+| Attention   | Bounce, Flash, Pulse, Ruberband, Shake, Standup, Swing, Tada, Wave, Wobble     |
+| Bounce      | InDown, InUp, InLeft, InRight, In                                               |
+| Fade        | InDown, InUp, InLeft, InRight, OutDown, OutUp, OutLeft, OutRight, In, Out      |
+| Flip        | InX, InY, OutX, OutY                                                            |
+| Rotate      | InDownLeft, InDownRight, InUpLeft, InUpRight, OutDownLeft, OutDownRight, OutUpLeft, OutUpRight, In, Out |
+| Slide       | InDown, InUp, InLeft, InRight, OutDown, OutUp, OutLeft, OutRight               |
+| Zoom        | In, InDown, InUp, InLeft, InRight, Out, OutDown, OutUp, OutLeft, OutRight      |
 
         
